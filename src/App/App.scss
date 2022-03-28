@@ -1,0 +1,44 @@
+.App {
+	width: 100vw;
+	min-height: 100vh;
+	background-color: #F3F3F3;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&--shift-down {
+
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}
+
+	&__content {
+		width: 627px;
+		height: 538px;
+		background-color: #FFFFFF;
+		border-radius: 0 32px 32px 0;
+		padding: 48px;
+
+		display: flex;
+		flex-direction: column;
+		gap: 40px;
+
+		h2 {
+			font-size: 1rem;
+			color: #A7A7A7;
+			font-weight: 900;
+		}
+
+
+		&__list {
+			display: flex;
+			flex-direction: column;
+			gap: 24px;
+		}
+	}
+
+}
