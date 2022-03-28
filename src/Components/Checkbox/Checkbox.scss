@@ -1,0 +1,46 @@
+.Checkbox {
+
+	display: flex;
+	align-items: center;
+	gap: 20px;
+
+	position: relative;
+
+	&__input {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0 ;
+	}
+
+	&__box {
+
+		width: 40px;
+		height: 40px;
+
+		border: 2px solid #C9CDD1;
+		border-radius: 12px;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+
+		svg {
+			display: none;
+		}
+
+	}
+
+	&__label {
+		font-size: 24px;
+		color: #4E4E4E;
+		user-select: none;
+	}
+
+
+	&__input:checked + &__box svg {
+		display: block;
+	}
+
+}
